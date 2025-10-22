@@ -13,7 +13,12 @@ a {
   /* altera a cor de todos os links das páginas */
 }
 
-h1, h2, h3, h4, h5, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -29,37 +34,207 @@ header nav {
   display: flex;
   justify-content: center;
 }
-header nav ul{
+
+header nav ul {
   display: flex;
   gap: 30px;
   border: 1px solid #e5e5e5;
-  margin: 2vw 0  0 0;
+  margin: 2vw 0 0 0;
   border-radius: 20px;
   padding: 4px;
 }
-header nav ul li a{
+
+header nav ul li a {
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
   display: block;
 }
+
 header nav ul li a.atual {
   background-color: black;
   color: white;
 }
+
 /*==================================
 BANNER
 ====================================*/
 
 section.banner {
-  display: flex;
-  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw auto 0 auto;
   width: 80%;
   max-width: 800px;
 }
+
 section.banner h1 {
-width: 50%;
-font-size: 2.2rem;
+  width: 50%;
+  font-size: 2.2rem;
+  color: #1E1E1E;
 }
+
+section.banner h1 span {
+  font-weight: bold;
+  color: #1E1E1E;
+}
+
 section.banner p {
+  color: #5A5A5A;
+  font-size: 1.5rem;
+}
+
+/*==================================
+POSTS
+====================================*/
+
+section.posts {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+section.posts>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+section.posts>ul>li {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
+  padding: 1vw;
+}
+
+section.posts>ul>li h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section.posts>ul>li p {
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+section.posts ul li a {
+  background-color: #F5F5F5;
+   border: 1px solid #e5e5e5;
+   border-radius: 20px;
+ padding: 2px 4px;
+}
+
+section.posts>ul>li ul li {
+  display: flex;
+  gap: 20px;
+}
+
+section.posts>ul>li ul {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+footer {
+  margin: 5vw auto 2vw auto;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1vw;
+  color: #7c7c7c;
+  border: 1px solid #e5e5e5;
+
+}
+
+/* =======================================================================
+ABOUT
+==========================================================================*/
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  border: 1px solid #e5e5e5;
+  margin: 2vw 0 0 0;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+header nav ul li a {
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  display: block;
+}
+
+header nav ul li a.atual {
+  background-color: black;
+  color: white;
+}
+
+/* ======================================================================
+PROJECTS 
+=========================================================================*/
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  border: 1px solid #e5e5e5;
+  margin: 2vw 0 0 0;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+header nav ul li a {
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  display: block;
+}
+
+header nav ul li a.atual {
+  background-color: black;
+  color: white;
+}
+
+/* BANNER PROJECTS*/
+section.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+section.banner h1 {
+  width: 50%;
+  font-size: 2.2rem;
+  color: #1E1E1E;
+}
+
+section.banner h1 span {
+  font-weight: bold;
+  color: #1E1E1E;
+}
+
+section.banner p {
+  color: #5A5A5A;
+  font-size: 1.5rem;
+}
+section.posts h2 {
+  font-weight: bold;
+  color: #1E1E1E;
+  font-size: 1.5rem;
+}
+section.posts p {
   
 }
