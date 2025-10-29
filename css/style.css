@@ -119,9 +119,9 @@ section.posts>ul>li p {
 
 section.posts ul li a {
   background-color: #F5F5F5;
-   border: 1px solid #e5e5e5;
-   border-radius: 20px;
- padding: 2px 4px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 2px 4px;
 }
 
 section.posts>ul>li ul li {
@@ -152,86 +152,184 @@ footer {
 ABOUT
 ==========================================================================*/
 
-header nav {
-  display: flex;
-  justify-content: center;
+section.aboutBanner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw auto;
+  width: 60%;
+  max-width: 800px;
 }
 
-header nav ul {
-  display: flex;
-  gap: 30px;
+section.aboutBanner h1 {
+  font-size: 3rem;
+}
+
+section.aboutBanner p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: #5A5A5A;
+}
+
+footer {
+  margin: 5vw auto 2vw auto;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1vw;
+  color: #7c7c7c;
   border: 1px solid #e5e5e5;
-  margin: 2vw 0 0 0;
-  border-radius: 20px;
-  padding: 4px;
-}
 
-header nav ul li a {
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-  display: block;
-}
-
-header nav ul li a.atual {
-  background-color: black;
-  color: white;
 }
 
 /* ======================================================================
 PROJECTS 
 =========================================================================*/
-
-header nav {
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul {
-  display: flex;
-  gap: 30px;
-  border: 1px solid #e5e5e5;
-  margin: 2vw 0 0 0;
-  border-radius: 20px;
-  padding: 4px;
-}
-
-header nav ul li a {
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-  display: block;
-}
-
-header nav ul li a.atual {
-  background-color: black;
-  color: white;
-}
-
-/* BANNER PROJECTS*/
-section.banner {
+section.bannerProjects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 5vw auto 0 auto;
+  justify-content: space-between;
+  margin: 4vw auto 0 auto;
   width: 80%;
   max-width: 800px;
 }
 
-section.banner h1 {
-  width: 50%;
-  font-size: 2.2rem;
-  color: #1E1E1E;
-}
-
-section.banner h1 span {
+section.bannerProjects h1 {
   font-weight: bold;
-  color: #1E1E1E;
+  font-size: 3rem;
 }
 
-section.banner p {
+section.bannerProjects p {
+  font-size: 30px;
+  color: #5a5a5a;
+}
+
+section.projetos ul li.EcoCharge {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+section.projetos h2 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 3vw;
+}
+
+section.projetos ul li.FinWise {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+section.projetos ul li.SmartAgro {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+section.projetos ul li.PicSphere {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+section.projetos ul li.HealthTrack {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+section.projetos ul li.MentalHub {
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+section.projetos p {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+}
+
+footer {
+  margin: 5vw auto 2vw auto;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1vw;
+  color: #7c7c7c;
+  border: 1px solid #e5e5e5;
+
+}
+
+/*====CONNECT====*/
+
+section.connectBannerr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw auto;
+  width: 60%;
+  max-width: 800px;
+}
+
+section.connectBannerr h1 {
+  font-size: 3rem;
+}
+
+section.connectBannerr p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
   color: #5A5A5A;
-  font-size: 1.5rem;
 }
-section.posts h2 {
-  font-weight: bold;
-  color: #1E1E1E;
+
+section.connectfinal {
+
+  margin: 5vw auto;
+  width: 60%;
+  max-width: 900px;
+}
+
+section.connectfinal ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  margin: 2vw;
+}
+
+section.connectfinal ul li {
+  text-align: center;
+  background-color: #ffff;
+  border: 1px solid #E5E5E5;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px #9b9b9b;
+}
+
+section.connectfinal ul li i {
+  color: black;
   font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+footer {
+  margin: 5vw auto 2vw auto;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1vw;
+  color: #7c7c7c;
+  border: 1px solid #e5e5e5;
+
 }
