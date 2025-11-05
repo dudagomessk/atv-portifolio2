@@ -263,46 +263,24 @@ footer {
 
 
 section.connectfinal {
-
-  margin: 5vw auto;
-  width: 60%;
-  max-width: 900px;
+  margin: 5vw auto 0 auto;
+  max-width: 1200px;
 }
 
 section.connectfinal ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2vw;
-  margin: 2vw;
+  gap: 20px;
 }
 
 section.connectfinal ul li {
-  text-align: center;
-  background-color: #ffff;
-  border: 1px solid #E5E5E5;
-  padding: 20px 40px;
-  border-radius: 15px;
-  box-shadow: 1px 1px 4px rgb(158, 157, 157);
+  background-color: #fffffe;
+  margin: 20px;
+  padding: 1.8vw;
+  border: #e5e5e5 2px solid;
+  border-radius: 25px;
 }
 
-section.connectfinal ul li i {
-  color: black;
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-footer {
-  margin: 5vw auto 2vw auto;
-  width: 80%;
-  max-width: 1000px;
-  background-color: white;
-  border-radius: 20px;
-  text-align: center;
-  padding: 1vw;
-  color: #7c7c7c;
-  border: 1px solid #e5e5e5;
-
-}
 
 /* ====================================================
 RESPONSIVIDADE
