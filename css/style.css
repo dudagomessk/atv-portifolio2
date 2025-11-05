@@ -2,7 +2,7 @@
 
 :root {
   --main-bg-color: #f5f5f5;
-  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-size: clamp(0.9375rem, calc(0.9119rem + 0.8vw), 4rem);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -68,8 +68,8 @@ section.banner {
 }
 
 section.banner h1 {
-  width: 50%;
-  font-size: 2.2rem;
+  width: 90%;
+  font-size: 2.3rem;
   color: #1E1E1E;
 }
 
@@ -80,8 +80,10 @@ section.banner h1 span {
 
 section.banner p {
   color: #5A5A5A;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
+
 
 /*==================================
 POSTS
@@ -108,20 +110,26 @@ section.posts>ul>li {
 }
 
 section.posts>ul>li h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin: 1.8vw;
 }
 
 section.posts>ul>li p {
-  line-height: 1.8rem;
+  line-height: 1rem;
   color: #757575;
+  margin: 1vw;
 }
 
 section.posts ul li a {
   background-color: #F5F5F5;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
-  padding: 2px 4px;
+  padding: 10px 4px;
+  display: inline-block;
+  margin: 0.5vw ;
+  font-weight:bold;
+  font-size: 0.8rem;
 }
 
 section.posts>ul>li ul li {
@@ -136,7 +144,7 @@ section.posts>ul>li ul {
 }
 
 footer {
-  margin: 5vw auto 2vw auto;
+  margin: 6vw auto 6vw auto;
   width: 80%;
   max-width: 1000px;
   background-color: white;
@@ -152,23 +160,7 @@ footer {
 ABOUT
 ==========================================================================*/
 
-section.aboutBanner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 5vw auto;
-  width: 60%;
-  max-width: 800px;
-}
 
-section.aboutBanner h1 {
-  font-size: 3rem;
-}
-
-section.aboutBanner p {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-  color: #5A5A5A;
-}
 
 footer {
   margin: 5vw auto 2vw auto;
@@ -186,30 +178,15 @@ footer {
 /* ======================================================================
 PROJECTS 
 =========================================================================*/
-section.bannerProjects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  margin: 4vw auto 0 auto;
-  width: 80%;
-  max-width: 800px;
-}
 
-section.bannerProjects h1 {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-section.bannerProjects p {
-  font-size: 30px;
-  color: #5a5a5a;
-}
 
 section.projetos ul li.EcoCharge {
   margin: 2vw;
   padding: 2vw;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.projetos h2 {
@@ -223,6 +200,8 @@ section.projetos ul li.FinWise {
   padding: 2vw;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.projetos ul li.SmartAgro {
@@ -230,6 +209,8 @@ section.projetos ul li.SmartAgro {
   padding: 2vw;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.projetos ul li.PicSphere {
@@ -237,6 +218,8 @@ section.projetos ul li.PicSphere {
   padding: 2vw;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.projetos ul li.HealthTrack {
@@ -244,6 +227,8 @@ section.projetos ul li.HealthTrack {
   padding: 2vw;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.projetos ul li.MentalHub {
@@ -251,6 +236,8 @@ section.projetos ul li.MentalHub {
   padding: 2vw;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.projetos p {
@@ -274,23 +261,6 @@ footer {
 
 /*====CONNECT====*/
 
-section.connectBannerr {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 5vw auto;
-  width: 60%;
-  max-width: 800px;
-}
-
-section.connectBannerr h1 {
-  font-size: 3rem;
-}
-
-section.connectBannerr p {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-  color: #5A5A5A;
-}
 
 section.connectfinal {
 
@@ -312,7 +282,7 @@ section.connectfinal ul li {
   border: 1px solid #E5E5E5;
   padding: 20px 40px;
   border-radius: 15px;
-  box-shadow: 1px 1px 4px #9b9b9b;
+  box-shadow: 1px 1px 4px rgb(158, 157, 157);
 }
 
 section.connectfinal ul li i {
@@ -332,4 +302,49 @@ footer {
   color: #7c7c7c;
   border: 1px solid #e5e5e5;
 
+}
+
+/* ====================================================
+RESPONSIVIDADE
+=======================================================*/
+@media only screen and (max-width: 600px) {
+  
+  header nav ul {
+    gap: 10px;
+  }
+
+  header nav ul li a {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  section.banner, section.posts, section.projetos {
+    display: block;
+    width: auto;
+    margin: 0 5vw 0 5vw;
+  }
+
+  section.posts > ul {
+    display: block;
+  }
+
+  section.posts > ul li {
+    margin: 3vw 0 3vw 0;
+  }
+
+  section.projetos ul li {
+    margin: 3vw 0 3vw 0;
+  }
+
+  section.projetos ul li h2 {
+    margin: 2vw 0 2vw 0;
+  }
+
+  section.banner p {
+    margin: 0 5vw 0 5vw;
+  }
+  section.banner h1 {
+    margin: 0 5vw 0 5vw;
+  }
+  
 }
